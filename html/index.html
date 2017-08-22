@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivo Jurišić</title>
+    <!--    Latest compiled and minified CSS    -->
+    <!--   CSS STUFF-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--    JAVASCRIPT AND JQUERY STUFF -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="../scripts/app.js"></script>
+    <!--    MASONRY  LAYOUT -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#nav">
+<div class="social">
+   <a href="mailto:ivo.jurisic123@gmail.com" class="social__icon-container"> 
+       <img class="social__icon" src="../images/mail.png"/>
+   </a>   <a href="tel:+385953713344" class="social__icon-container"> 
+       <img class="social__icon" src="../images/call.png"/>
+   </a>
+   <a href="https://www.linkedin.com/in/ivo-jurišić-26106a115/" class="social__icon-container"> 
+       <img class="social__icon" src="../images/linkedin.png"/>
+   </a>
+</div>
+<nav id="nav" class="navigation navigation__main">
+    <div class="container">
+        <a href=".navigation__list" class="navigation__hamburger" data-toggle="collapse" role="button" aria-expanded="false">
+            <span class="navigation__hamburger-line navigation__hamburger-first-line"></span>
+            <span class="navigation__hamburger-line  navigation__hamburger-second-line"></span>
+            <span class="navigation__hamburger-line  navigation__hamburger-third-line"></span>
+        </a>
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a class="navigation__link smooth" href="#work">
+                    work experience
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link smooth" href="#education">
+                    education
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link smooth" href="#skills">
+                    skills and languages
+                </a>
+            </li>                 
+            <li class="navigation__item">
+                <a class="navigation__link smooth" href="#volounteering">
+                    volunteering
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+<div id="work" class="padding">
+    <h3 class="main__title">
+        Work Experience
+    </h3>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+               <a href="https://emakina.hr" class="main__company-link">
+                   <img class="main__company-img" src="../images/emakina.png"/></a>
+                <h4 class="main__company-title">
+                    Emakina d.o.o
+                </h4>
+           </div>
+            <h4 class="main__job-title">
+                Junior Frontend Developer | May 2017-July 2017
+            </h4>
+            <p class="main__description">               
+                Slicing PSD designs for international companies
+                <br/>
+                i.e (DonauChemie Group, Hoegl etc.)
+                <br/>
+                Testing websites in development to make sure all the links work properly and that nothing breaks.
+                <br/> 
+                Cross-browser testing including phones, tablets and computer monitors.
+                <br/>
+                <br/>
+                To accomplish the tasks we worked with following technologies and techniques:
+            </p>
+            <ul class="main__list">
+                <li class="main__list-item">- Html5</li>
+                <li class="main__list-item">- CSS3</li>
+                <li class="main__list-item">- Bootstrap (mostly for the grid)</li>
+                <li class="main__list-item">- Sass preprocessor (we worked with sass and not less because it is more popular <br/>
+                and bootstrap switched to sass as well in Bootstrap 4)</li>
+                <li class="main__list-item">- Javascript</li>
+                <li class="main__list-item">- Git</li>
+            </ul> 
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+               <a href="http://artoftarara.com" class="main__company-link">
+                   <img class="main__company-img" src="../images/art-of-tarara-logo-ext.png"/>
+               </a>
+                <h4 class="main__company-title">
+                    Art Of Tarara
+                </h4>
+           </div>
+            <h4 class="main__job-title">
+                Freelancer frontend developer | January 2017-May 2017
+            </h4>
+            <p class="main__description">               
+                Slicing PSD designs
+                <br/>
+                Making websites for clients on a tight budget.
+                <br/>    
+           </p>
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+             <a href="http://www.mpluscc.com" class="main__company-link">  
+               <img class="main__company-img" src="../images/meritus.png"/></a>
+                <h4 class="main__company-title">
+                    Meritus Plus d.o.o.
+                </h4>
+            </div>
+            <h4 class="main__job-title">
+                Mentor / Team-leader | December 2015-January 2017
+            </h4>
+            <p class="main__description">    
+                Managing computer networks, and computers, creating 
+                <br/>
+                spreadsheets  and calculating bonuses for agents
+                <br/>        
+                <br/>   
+                Leading two different sales teams, communicating directly 
+                <br/>
+                with clients regarding accomplished goals and the future of projects.
+                <br/>
+                <br/>
+                Coaching agents one on one techniques regarding reducing "Buyers remorse" and increasing sales conversions.
+            </p>
+       </div> 
+    </section>
+    <section class="main">
+       <div class="container">
+            <div class="main__company clearfix">
+                <a href="http://www.landgasthaus-brueers.de" class="main__company-link">  
+                    <img class="main__company-img" src="../images/bruers.gif"/>
+                </a>
+                <h4 class="main__company-title">
+                    Restaurant Brüers
+                </h4>
+            </div>
+            <h4 class="main__job-title">
+                Restaurant specialist | October 2014-March 2015
+            </h4>
+            <p class="main__description">    
+                Receiving orders and serving food and drinks
+                <br/>
+                On the weekends working as a barmen
+                <br/>
+            </p>
+       </div> 
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+               <a href="https://datastream.hr" class="main__company-link">
+                   <img class="main__company-img" src="../images/datastream.png"/>
+               </a>
+                <h4 class="main__company-title">
+                    Datastream
+                </h4>
+           </div>
+            <h4 class="main__job-title">
+                Mechatronician | July 2014
+            </h4>
+            <p class="main__description">               
+                Setting up routers and firewall on ATP Umag Tournament
+                <br/>
+            </p>
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <a href="http://www.kovac.com.hr" class="main__company-link">
+                   <img class="main__company-img" src="../images/kovaccelik.png"/>
+                </a>
+                <h4 class="main__company-title">
+                    Kovac Čelik d.o.o
+                </h4>
+            </div>
+            <h4 class="main__job-title">
+                Mechatronician | May 2013-June 2013
+            </h4>
+            <p class="main__description">    
+                Working with Bystronic AG laser cutter, adjusting it and supervising the process of cutting steel.
+                <br/>
+                Preparing metal surfaces and sorting them in appropriate categories.
+                <br/>
+            </p>
+       </div> 
+    </section>
+</div>
+<div id="education" class="padding">
+    <h3 class="main__title">
+        Education
+    </h3>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Technical School Ruđer Bošković
+                </h4>
+           </div>
+            <h4 class="main__job-title">
+                Mechatronician | September 2007- June 2011
+            </h4>
+            <p class="main__description">               
+                Programming in C++.
+                <br/>
+                Developing components and various electronic parts in Autocad and Catia
+                <br/>
+                Worked on CNC machines on development of physical parts. Assembled parts with software and used soldering iron to create bords.
+                <br/>    
+           </p>
+       </div>            
+    </section>
+</div>
+<div id="skills" class="padding">
+    <h3 class="main__title">
+        Skills And Languages
+    </h3>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Skills
+                </h4>
+            </div>
+            <h4 class="main__job-title">
+                Frontend development
+            </h4>
+            <p class="main__description">               
+                Great knowledge of HTML5 and SASS. 
+                <br/>
+                On projects with the Emakina I had to work with BEM naming schemes which I use even in my projects where it makes sense. I use bootstrap mostly for the scrollspy and grid.
+                <br/>
+                Below is a list of technologies and frameworks I worked with:
+            </p>
+            <ul class="main__list">
+                <li class="main__list-item">- Html 5</li>
+                <li class="main__list-item">- CSS 3</li>
+                <li class="main__list-item">- Bootstrap </li>
+                <li class="main__list-item">- Sass preprocessor </li>
+                <li class="main__list-item">- Javascript</li>
+                <li class="main__list-item">- Git</li>
+            </ul> 
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Languages
+                </h4>
+            </div>
+            <h4 class="main__job-title">
+                English language
+            </h4>
+            <p class="main__description">   
+            </p>            
+            <ul class="main__list">
+                <li class="main__list-item">- Understanding: C2 </li>
+                <li class="main__list-item">- Speaking: C1 </li>
+                <li class="main__list-item">- Writing: C2 </li>
+            </ul> 
+             <h4 class="main__job-title">
+                German language
+            </h4>
+            <p class="main__description">   
+            </p>            
+            <ul class="main__list">
+                <li class="main__list-item">- Understanding: B2 </li>
+                <li class="main__list-item">- Speaking: A2 </li>
+                <li class="main__list-item">- Writing: B2 </li>
+            </ul> 
+       </div>            
+    </section>
+</div>
+<div id="volounteering" class="padding">
+    <h3 class="main__title">
+        Volunteering Work
+    </h3>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Sferakon 2014/2015/2016/2017
+                </h4>
+            </div>
+            <p class="main__description">  
+                Helping guest speakers with their laptops and presentations.
+                <br/>             
+                Setting up SFerakon. Buying food and refreshments for speakers and guests of the convention. 
+                <br/>
+                Selling tickets and managing spreadsheet with names of the attendees
+            </p>
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Community "Životna Linija" 2014
+                </h4>
+            </div>
+            <p class="main__description">  
+                Helping guest speakers with their laptops and presentations.
+                <br/>             
+                Setting up SFerakon. Buying food and refreshments for speakers and guests of the convention. 
+                <br/>
+                Selling tickets and managing spreadsheet with names of the attendees
+            </p>
+       </div>            
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__company clearfix">
+                <h4 class="main__company-title">
+                    Istrakon 2015
+                </h4>
+            </div>
+            <p class="main__description">  
+                Volunteering on call-point. 
+                <br/>
+                Taking care of food for people who ordered it and managing the orders.
+            </p>
+       </div>            
+    </section>
+</div>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+

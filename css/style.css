@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin-ext");
+/*------------------------------------------------
+---------BOOTSTRAPS VARIABLES AND ASSETS----------
+------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.navigation {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25em;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  background-color: #404040;
+  border-bottom: 1px solid #1f1f1f;
+  width: 100%;
+  height: 56px;
+  z-index: 4;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75); }
+  @media (max-width: 992px) {
+    .navigation {
+      height: 50px; } }
+  .navigation__hamburger {
+    padding-top: 18px;
+    margin-left: 10px;
+    margin-right: 20%;
+    display: none; }
+    @media (max-width: 992px) {
+      .navigation__hamburger {
+        margin: 0 auto;
+        text-align: center;
+        float: right;
+        display: block; } }
+  .navigation__hamburger-first-line, .navigation__hamburger-second-line, .navigation__hamburger-third-line {
+    display: block;
+    width: 30px;
+    background-color: #d2d2d2;
+    height: 2px;
+    display: block;
+    margin-bottom: 5px;
+    transform: rotate(0deg);
+    transition: .15s ease-in-out; }
+  .navigation__hamburger:hover > .navigation__hamburger-line {
+    background-color: white;
+    box-shadow: 0px 0px 30px white; }
+  .navigation__hamburger--is-open .navigation__hamburger-first-line {
+    margin-top: 4px;
+    margin-bottom: -1px;
+    transform: rotate(135deg); }
+  .navigation__hamburger--is-open .navigation__hamburger-second-line {
+    margin-bottom: -2px;
+    transform: rotate(-135deg); }
+  .navigation__hamburger--is-open .navigation__hamburger-third-line {
+    margin-bottom: 10px;
+    transform: rotate(-135deg); }
+  .navigation__list {
+    margin-left: -25px;
+    margin-right: -25px;
+    width: 100%;
+    text-align: center;
+    display: inline-block; }
+    @media (max-width: 992px) {
+      .navigation__list {
+        background-color: #262626;
+        margin: 0;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px; } }
+  .navigation__item {
+    text-transform: capitalize;
+    display: inline-block; }
+    @media (max-width: 992px) {
+      .navigation__item {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #1f1f1f; } }
+  .navigation__link {
+    font-size: 1em;
+    padding: 18px 25px 17px 25px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    color: #d2d2d2; }
+    .navigation__link:visited, .navigation__link:focus {
+      text-decoration: none;
+      display: inline-block;
+      color: #d2d2d2;
+      text-shadow: 1px 1px 2px rgba(210, 210, 210, 0.5); }
+    .navigation__link:hover {
+      color: white;
+      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      background-color: #404040; }
+
+.padding {
+  padding-top: 53px; }
+  @media (max-width: 992px) {
+    .padding {
+      padding-top: 50px; } }
+
+body, html {
+  position: relative;
+  background-image: url("../images/white-shapes.png"); }
+
+.main {
+  padding-bottom: 50px;
+  border-top: 3px #cccccc solid; }
+  .main__title {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: block;
+    padding: 20px; }
+  .main__company {
+    text-align: center; }
+  .main__company-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 1.75em;
+    margin: 60px 0 30px 0;
+    float: left; }
+    @media (max-width: 992px) {
+      .main__company-title {
+        float: none;
+        display: block; } }
+  .main__company-img {
+    margin-top: 25px;
+    max-width: 250px;
+    float: right; }
+    @media (max-width: 992px) {
+      .main__company-img {
+        float: none;
+        max-width: 350px; } }
+  .main__job-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 1.75em;
+    font-size: 1.25em;
+    margin: 50px 0 15px 0; }
+  .main__description {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    line-height: 1.75;
+    font-size: 1em;
+    padding-left: 50px; }
+  .main__list {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    line-height: 1.75;
+    font-size: 1em;
+    padding-left: 100px; }
+
+.social {
+  position: fixed;
+  z-index: 10;
+  display: inline-block;
+  margin-left: 40px; }
+  @media (min-width: 992px) {
+    .social {
+      background-color: rgba(52, 52, 52, 0.25);
+      border-radius: 5px 0 0 5px;
+      margin-top: 400px;
+      margin-left: 0;
+      right: 0; } }
+  .social__icon {
+    width: 100%; }
+  .social__icon-container {
+    float: left;
+    display: block;
+    width: 35px;
+    margin: 8px 40px 20px 10px;
+    filter: contrast(100%); }
+    .social__icon-container:hover {
+      filter: grayscale(0); }
+    @media (min-width: 992px) {
+      .social__icon-container {
+        filter: grayscale(100%);
+        width: 45px;
+        margin: 20px 10px 20px 10px;
+        display: block;
+        float: none; } }
+
+/*# sourceMappingURL=style.css.map */

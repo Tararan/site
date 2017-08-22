@@ -1,0 +1,37 @@
+.social {
+    position: fixed;
+    z-index: 10;
+    display: inline-block;
+    margin-left: 40px;
+    
+    @media (min-width: $screen-md) {
+        background-color: rgba(52,52,52,0.25);
+        border-radius: 5px 0 0 5px;
+        margin-top: 400px;
+        margin-left: 0;
+        right:0;
+    }
+    
+    &__icon {
+        width: 100%;
+    }
+    
+    &__icon-container {
+        float: left;
+        display: block;
+        width: 35px;
+        margin: 8px 40px 20px 10px;
+        filter: contrast(100%);        
+        &:hover {
+            filter: grayscale(0);
+        }
+    
+        @media (min-width: $screen-md) {
+            filter: grayscale(100%);
+            width: 45px;
+            margin: 20px 10px 20px 10px;
+            display: block;
+            float: none;
+        }
+    }    
+}
